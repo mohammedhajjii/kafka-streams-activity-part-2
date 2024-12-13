@@ -42,8 +42,5 @@ public class ClickCountConsumer {
                     .forEach(ClickCountConsumer::log);
 
         }
-
-
-
     }
 }

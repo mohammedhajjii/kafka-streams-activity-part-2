@@ -6,7 +6,6 @@ import org.apache.kafka.streams.StreamsBuilder;
 import org.apache.kafka.streams.StreamsConfig;
 import org.apache.kafka.streams.kstream.Consumed;
 import org.apache.kafka.streams.kstream.Produced;
-
 import java.util.Properties;
 
 public class ClickStream {
@@ -42,7 +41,6 @@ public class ClickStream {
         final KafkaStreams INSTANCE = new KafkaStreams(builder.build(), props);
         INSTANCE.start();
         Runtime.getRuntime().addShutdownHook(new Thread(INSTANCE::close));
-
 
     }
 }
